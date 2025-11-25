@@ -1,0 +1,45 @@
+body {
+  background: #0f1724;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.card {
+  max-width: 420px;
+  margin: auto;
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: 0.8s ease;
+  opacity: 0.4;
+  transform: scale(0.95);
+}
+
+/* 🔥 Animation when playing */
+.show-photo {
+  opacity: 1;
+  transform: scale(1);
+}
+
+button {
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 0;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#startBtn { background: #ff6b81; }
+#stopBtn { background: #ff4757; }
+#playBtn { background: #1e90ff; }
+
