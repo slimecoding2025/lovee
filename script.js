@@ -19,14 +19,14 @@ startBtn.onclick = async () => {
   };
 
   recorder.start();
-  statusTxt.innerHTML = "Recording...";
+  statusTxt.innerText = "Recording...";
   startBtn.disabled = true;
   stopBtn.disabled = false;
 };
 
 stopBtn.onclick = () => {
   recorder.stop();
-  statusTxt.innerHTML = "Recording stopped";
+  statusTxt.innerText = "Recording stopped";
   startBtn.disabled = false;
   stopBtn.disabled = true;
 };
@@ -35,14 +35,13 @@ playBtn.onclick = () => {
   const audioURL = URL.createObjectURL(audioFile);
   const audio = new Audio(audioURL);
 
-  // 🔥 Animation for the photo
+  // 🔥 التصويرة تظهر وقت يبدأ الصوت
   photo.classList.add("show-photo");
 
   audio.play();
 
-  // remove animation after audio ends
   audio.onended = () => {
+    // تخفي الصورة بعد ما يكمّل الصوت
     photo.classList.remove("show-photo");
   };
-};pages.cloudflare.com
-
+};
